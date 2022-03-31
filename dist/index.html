@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Document</title>
-        <link rel="stylesheet" href="styles/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Job Trend Search</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
+        <section class="showcase">
+            <div class="video-container">
+                <video src="media/data.mp4" autoplay muted loop></video>
+            </div>
+            <div class="content">
+                <h1>Job Trend Search</h1>
+            </div>
+        </section>
+
+        <section id="about">
+            <form id="the-form" class="search" method="POST">
+                <!-- <div class="box">
+                    <label for="Country">Country</label>
+                    <select name="country" id="search-bar">
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div> -->
+                <div class="box">
+                    <label for="City">City</label>
+                    <select name="city" id="search-bar">
+                        <option value="halifax">Halifax</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="vancouver">Vancouver</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="keyword">Keyword</label>
+                    <input
+                        type="text"
+                        id="search-bar"
+                        name="keyword"
+                        placeholder="Enter Keyword"
+                    />
+                </div>
+            </form>
+
+            <button class="btn" type="submit">Search</button>
+
+            <h2>PROG2700</h2>
+
+            <div class="social">
+                <a href="https://github.com/nhistory" target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/sehwann/" target="_blank"
+                    ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+                <a href="https://nhistory.github.io/DevBlog/" target="_blank"
+                    ><i class="fab fa-blogger fa-2x"></i
+                ></a>
+            </div>
+        </section>
         <script src="/dist/scripts/main.js"></script>
     </body>
 </html>
