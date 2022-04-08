@@ -3,6 +3,7 @@
 @import 'base';
 @import 'video';
 @import 'searchForm';
+@import 'jobResult';
 
 $primary-color: #3a4052;
 
@@ -12,6 +13,10 @@ $primary-color: #3a4052;
     margin: 0;
     padding: 0;
     line-height: 1.5;
+}
+
+body {
+    background: #f1f1f1;
 }
 
 #about {
@@ -30,6 +35,7 @@ $primary-color: #3a4052;
 
 .social a {
     margin: 0 5px;
+    color: $primary-color;
 }
 
 @media (min-width: 768px) {

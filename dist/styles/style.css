@@ -85,8 +85,7 @@ textarea:focus:-ms-input-placeholder {
   margin: 5px;
   text-align: center;
 }
-
-label {
+.box label {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -104,6 +103,84 @@ label {
   text-align: center;
 }
 
+.btn {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  width: 200px;
+  background: #3a4052;
+  color: #fff;
+  border-radius: 10px;
+  border: solid #fff 1px;
+  opacity: 0.7;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  max-width: 700px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #3a4052;
+  display: inline-block;
+  position: relative;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #3a4052;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+
 * {
   font-family: Roboto, sans-serif;
   box-sizing: border-box;
@@ -112,9 +189,8 @@ label {
   line-height: 1.5;
 }
 
-a {
-  text-decoration: none;
-  color: #3a4052;
+body {
+  background: #f1f1f1;
 }
 
 #about {
@@ -131,22 +207,9 @@ a {
   color: #3a4052;
 }
 
-.btn {
-  display: inline-block;
-  font-size: 30px;
-  padding: 10px;
-  width: 200px;
-  background: #3a4052;
-  color: #fff;
-  border-radius: 10px;
-  border: solid #fff 1px;
-  opacity: 0.7;
-  margin-bottom: 100px;
-  cursor: pointer;
-}
-
 .social a {
   margin: 0 5px;
+  color: #3a4052;
 }
 
 @media (min-width: 768px) {
