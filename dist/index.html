@@ -25,28 +25,24 @@
 
         <section id="about">
             <form id="the-form" class="search" method="POST">
-                <!-- <div class="box">
-                    <label for="Country">Country</label>
-                    <select name="country" id="search-bar">
-                        <option value="canada">Canada</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="usa">USA</option>
-                    </select>
-                </div> -->
                 <div class="box">
                     <label for="City">City</label>
-                    <select name="city" id="search-bar">
+                    <select
+                        name="city"
+                        id="search-bar-city"
+                        onchange="handleOnChange(this)"
+                    >
                         <option value=""></option>
-                        <option value="halifax">Halifax</option>
-                        <option value="toronto">Toronto</option>
-                        <option value="vancouver">Vancouver</option>
+                        <option value="Halifax">Halifax</option>
+                        <option value="Toronto">Toronto</option>
+                        <option value="Vancouver">Vancouver</option>
                     </select>
                 </div>
                 <div class="box">
                     <label for="keyword">Keyword</label>
                     <input
                         type="text"
-                        id="search-bar"
+                        id="search-bar-keyword"
                         name="keyword"
                         placeholder="Enter Keyword"
                     />
@@ -55,36 +51,18 @@
 
             <button class="btn" type="submit">Search</button>
 
+            <!-- div for d3 container -->
+            <h2 class="histogram"></h2>
+            <div id="d3-container"></div>
+
+            <!-- jobN & meanSal -->
+
+            <h2 class="jobN"></h2>
+            <h2 class="meanSal"></h2>
+
             <!-- Searched Job Description -->
 
-            <div class="blog-card">
-                <div class="description">
-                    <h1>Learning to Code</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad eum dolorum architecto obcaecati enim dicta
-                        praesentium, quam nobis! Neque ad aliquam facilis
-                        numquam. Veritatis, sit.
-                    </p>
-                    <p class="read-more">
-                        <a href="#">Job ads</a>
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card alt">
-                <div class="description">
-                    <h1>Mastering the Language</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad eum dolorum architecto obcaecati enim dicta
-                        praesentium, quam nobis! Neque ad aliquam facilis
-                        numquam. Veritatis, sit.
-                    </p>
-                    <p class="read-more">
-                        <a href="#">Job ads</a>
-                    </p>
-                </div>
-            </div>
+            <section id="job_data"></section>
 
             <!-- Footer section -->
 
@@ -102,6 +80,7 @@
                 ></a>
             </div>
         </section>
+        <script src="http://d3js.org/d3.v7.js"></script>
         <script src="/dist/scripts/main.js"></script>
     </body>
 </html>
